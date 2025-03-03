@@ -1,13 +1,13 @@
 ### Health Check
-GET http://localhost:8003/health
+GET https://auth-app-1017406670325.us-central1.run.app/health
 
 ### Validate Valid Token
-POST http://localhost:8003/auth
+POST https://auth-app-1017406670325.us-central1.run.app/auth
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkRhdGFQYXJ0bmVyIn0.BnLA0KJC3-fQBzpK0KfSO0p4s-KUEHNlpdvUx0Qkzsk
 
 ### Validate Invalid Token
-POST http://localhost:8003/auth
+POST https://auth-app-1017406670325.us-central1.run.app/auth
 Authorization: Bearer invalid.token.here
 
 ### Missing Authorization Header
-POST http://localhost:8003/auth
+POST https://auth-app-1017406670325.us-central1.run.app/auth
